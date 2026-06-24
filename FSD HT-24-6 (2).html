@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Validation</title>
+</head>
+<body style="background-color: lightblue; text-align: center; padding-top: 100px;">
+
+    <h2 style="color: darkblue;">Text Input Validation</h2>
+
+    <input type="text" id="txt" placeholder="Enter name" style="padding: 8px;"> 
+
+    <br><br>
+
+    <button onclick="checkText()" style="background-color: green; color: white; padding: 8px 15px; border: none;">
+        Submit
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkText() {
+            var name = document.getElementById("txt").value;
+
+            if (name == "") {
+                document.getElementById("result").innerHTML = "Please enter text";
+                document.getElementById("result").style.color = "red";
+            } else {
+                document.getElementById("result").innerHTML = "Input is valid";
+                document.getElementById("result").style.color = "green";
+            }
+        }
+    </script>
+
+</body>
+</html>
