@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Listener Example</title> 
+    <style>
+        body {
+            background-color:#ED725A ;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding-top: 100px;
+        }
+        h2 {
+            color: dark green;
+        }
+        button {
+            background-color: darkgreen;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+           
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Click Button</h2> 
+    <button id="myButton">Click</button>
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            alert("Button clicked successfully");
+        });
+    </script>
+
+</body>
+</html>
